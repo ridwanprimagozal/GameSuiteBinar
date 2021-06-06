@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">GameSuitBinar</string>
+    <string name="text_player">Pemain 1</string>
+    <string name="text_com">COM</string>
+</resources>
