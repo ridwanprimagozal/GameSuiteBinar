@@ -61,7 +61,8 @@
             android:id="@+id/fl_player_action_rock"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:layout_marginStart="@dimen/_13sdp">
+            android:layout_marginStart="@dimen/_13sdp"
+            tools:background="@color/primary_color_variant">
 
             <ImageView
                 android:id="@+id/iv_rock_left"
@@ -75,7 +76,8 @@
             android:id="@+id/fl_player_action_paper"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:layout_marginStart="@dimen/_13sdp">
+            android:layout_marginStart="@dimen/_13sdp"
+            tools:background="@color/primary_color_variant">
 
             <ImageView
                 android:id="@+id/iv_paper_left"
@@ -89,7 +91,8 @@
             android:id="@+id/fl_player_action_scissor"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:layout_marginStart="@dimen/_13sdp">
+            android:layout_marginStart="@dimen/_13sdp"
+            tools:background="@color/primary_color_variant">
 
 
             <ImageView
@@ -110,13 +113,15 @@
         android:layout_marginTop="@dimen/_8sdp"
         android:orientation="vertical"
         app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/tv_com">
+        app:layout_constraintTop_toBottomOf="@id/tv_com"
+        >
 
         <FrameLayout
             android:id="@+id/fl_com_action_rock"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:layout_marginEnd="@dimen/_13sdp">
+            android:layout_marginEnd="@dimen/_13sdp"
+            tools:background="@color/primary_color_variant">
 
             <ImageView
                 android:id="@+id/iv_rock_right"
@@ -130,7 +135,8 @@
             android:id="@+id/fl_com_action_paper"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:layout_marginEnd="@dimen/_13sdp">
+            android:layout_marginEnd="@dimen/_13sdp"
+            tools:background="@color/primary_color_variant">
 
             <ImageView
                 android:id="@+id/iv_paper_right"
@@ -144,7 +150,8 @@
             android:id="@+id/fl_com_action_scissors"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:layout_marginEnd="@dimen/_13sdp">
+            android:layout_marginEnd="@dimen/_13sdp"
+            tools:background="@color/primary_color_variant">
 
             <ImageView
                 android:id="@+id/iv_scissors_right"

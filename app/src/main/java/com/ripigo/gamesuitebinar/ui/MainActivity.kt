@@ -70,19 +70,19 @@ class MainActivity : AppCompatActivity() {
 
         when (CharacterGameSuit.formInt(playerSuit)) {
             CharacterGameSuit.ROCK -> {
-                binding.flPlayerActionRock.setBackgroundColor(R.drawable.bg_action_button)
+                binding.flPlayerActionRock.setBackgroundColor(R.drawable.imageview_button_active_background)
                 binding.flPlayerActionPaper.setBackgroundColor(0)
                 binding.flPlayerActionScissor.setBackgroundColor(0)
             }
             CharacterGameSuit.PAPER -> {
+                binding.flPlayerActionPaper.setBackgroundColor(R.drawable.imageview_button_active_background)
                 binding.flPlayerActionRock.setBackgroundColor(0)
-                binding.flPlayerActionPaper.setBackgroundColor(R.drawable.bg_action_button)
                 binding.flPlayerActionScissor.setBackgroundColor(0)
             }
             CharacterGameSuit.SCISSOR -> {
+                binding.flPlayerActionScissor.setBackgroundColor(R.drawable.imageview_button_active_background)
                 binding.flPlayerActionRock.setBackgroundColor(0)
                 binding.flPlayerActionPaper.setBackgroundColor(0)
-                binding.flPlayerActionScissor.setBackgroundColor(R.drawable.bg_action_button)
             } else -> {
             binding.ivStatusResult.setImageResource(0)
             binding.ivStatusResult.setImageResource(0)
@@ -103,19 +103,19 @@ class MainActivity : AppCompatActivity() {
 
         when (CharacterGameSuit.formInt(comSuit)) {
             CharacterGameSuit.ROCK -> {
-                binding.flComActionRock.setBackgroundColor(R.drawable.bg_action_button)
+                binding.flComActionRock.setBackgroundColor(R.drawable.imageview_button_active_background)
                 binding.flComActionPaper.setBackgroundColor(0)
                 binding.flComActionScissors.setBackgroundColor(0)
             }
             CharacterGameSuit.PAPER -> {
+                binding.flComActionPaper.setBackgroundColor(R.drawable.imageview_button_active_background)
                 binding.flComActionRock.setBackgroundColor(0)
-                binding.flComActionPaper.setBackgroundColor(R.drawable.bg_action_button)
                 binding.flComActionScissors.setBackgroundColor(0)
             }
             CharacterGameSuit.SCISSOR -> {
+                binding.flComActionScissors.setBackgroundColor(R.drawable.imageview_button_active_background)
                 binding.flComActionRock.setBackgroundColor(0)
                 binding.flComActionPaper.setBackgroundColor(0)
-                binding.flComActionScissors.setBackgroundColor(R.drawable.bg_action_button)
             }
             else -> {
                 binding.ivStatusResult.setImageResource(0)
