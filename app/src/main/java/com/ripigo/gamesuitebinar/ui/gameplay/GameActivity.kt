@@ -1,4 +1,4 @@
-package com.ripigo.gamesuitebinar.ui
+package com.ripigo.gamesuitebinar.ui.gameplay
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
@@ -8,10 +8,10 @@ import com.ripigo.gamesuitebinar.databinding.ActivityMainBinding
 import com.ripigo.gamesuitebinar.enum.CharacterGameSuit
 import kotlin.random.Random
 
-class MainActivity : AppCompatActivity() {
+class GameActivity : AppCompatActivity() {
 
     private lateinit var binding: ActivityMainBinding
-    private val TAG = MainActivity::class.java.simpleName
+    private val TAG = GameActivity::class.java.simpleName
 
 
     override fun onCreate(savedInstanceState: Bundle?) {
