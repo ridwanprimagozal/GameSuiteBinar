@@ -11,5 +11,6 @@
     <!--  Color Theme Custom App  -->
     <color name="primary_color">#FF4F004F</color>
     <color name="primary_color_variant">#FFFCA407</color>
+    <color name="gray">#ff6e6e6e</color>
 
 </resources>

@@ -11,14 +11,21 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.GameSuiteBinar">
-        <activity android:name=".ui.splashscreen.SplashScreenActivity"></activity>
-        <activity android:name=".ui.gameplay.GameActivity">
+        <activity android:name=".ui.gameplay.GamePlayerActivity"></activity>
+        <activity android:name=".ui.gameplay.GameComActivity" />
+        <activity android:name=".ui.gameplay.GameActivityVsPlayer" />
+        <activity android:name=".ui.menu.MenuActivity" />
+        <activity android:name=".ui.splashscreen.SplashScreenActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <activity
+            android:name=".ui.intro.IntroSliderActivity"
+            android:windowSoftInputMode="adjustPan" />
+        <activity android:name=".ui.gameplay.GameActivityVsCom" />
     </application>
 
 </manifest>

@@ -4,6 +4,44 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@drawable/bg_splashscreen"
     tools:context=".ui.splashscreen.SplashScreenActivity">
+
+    <TextView
+        android:id="@+id/tv_title_splashscreen"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/text_title_splashscreen"
+        android:fontFamily="@font/pixelated_font"
+        android:textColor="@color/white"
+        android:textSize="@dimen/_34ssp"
+        android:gravity="center"
+        android:layout_marginTop="@dimen/_24ssp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"/>
+
+    <ImageView
+        android:id="@+id/iv_logo_splashscreen"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/logo_splashscreen"
+        app:layout_constraintTop_toTopOf="@+id/tv_title_splashscreen"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"/>
+
+    <TextView
+        android:id="@+id/tv_version_splashscreen"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/gotham_font"
+        android:text="@string/text_version_splashscreen"
+        android:textColor="@color/white"
+        android:textAlignment="center"
+        android:layout_marginBottom="@dimen/_10sdp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"/>
 
 </androidx.constraintlayout.widget.ConstraintLayout>

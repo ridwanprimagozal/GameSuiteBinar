@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="wrap_content"
+    android:layout_height="match_parent"
+    android:padding="15dp"
+    tools:context=".ui.dialog.DialogCustomComFragment"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <TextView
+        android:id="@+id/tv_result"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/gotham_font"
+        android:textFontWeight="600"
+        android:textSize="15sp"
+        android:text="@string/text_result"
+        android:textColor="@color/black"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tv_winner"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/pixelated_font"
+        android:textColor="@color/primary_color_variant"
+        android:textFontWeight="800"
+        android:textAllCaps="true"
+        android:textSize="@dimen/_22ssp"
+        android:layout_marginTop="20dp"
+        android:gravity="center"
+        app:layout_constraintEnd_toEndOf="@id/tv_result"
+        app:layout_constraintStart_toStartOf="@id/tv_result"
+        app:layout_constraintTop_toBottomOf="@id/tv_result" />
+
+    <Button
+        android:id="@+id/btn_replay_player"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_width="200dp"
+        android:backgroundTint="@color/primary_color_variant"
+        android:fontFamily="@font/gotham_font"
+        android:textColor="@color/black"
+        android:textSize="15sp"
+        android:text="@string/text_player_dialog_play_again"
+        app:layout_constraintLeft_toLeftOf="@id/tv_winner"
+        app:layout_constraintRight_toRightOf="@id/tv_winner"
+        app:layout_constraintTop_toBottomOf="@id/tv_winner" />
+
+    <Button
+        android:id="@+id/btn_return"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="0dp"
+        android:layout_width="200dp"
+        android:backgroundTint="@color/gray"
+        android:fontFamily="@font/gotham_font"
+        android:textColor="@color/white"
+        android:textSize="15sp"
+        android:text="@string/text_player_dialog_back_to_menu"
+        app:layout_constraintLeft_toLeftOf="@id/btn_replay_player"
+        app:layout_constraintRight_toRightOf="@id/btn_replay_player"
+        app:layout_constraintTop_toBottomOf="@id/btn_replay_player" />
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
